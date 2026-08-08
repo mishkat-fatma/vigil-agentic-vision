@@ -2,21 +2,13 @@
 
 # ⚡ VIGIL
 
-### Visual Intelligence Graph &amp; Inference Layer
+### Visual Intelligence Graph & Inference Layer
 
-**A block-graph, real-time computer-vision platform with a single, swappable free-tier LLM reasoning core — [freellmapi](https://github.com/tashfeenahmed/freellmapi).**
+**A real-time, block-graph computer-vision platform for building auditable AI-powered visual workflows.**
 
-_Turn any camera stream into risk-scored, human-readable, auditable events — through a pipeline of small, inspectable decisions instead of one opaque model._
+Developed and maintained by **Mishkat Fatma**
 
-<br/>
-
-[![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg)](./LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10_%7C_3.11_%7C_3.12-3776AB?logo=python&logoColor=white)](./pyproject.toml)
-[![FastAPI](https://img.shields.io/badge/API-FastAPI-009688?logo=fastapi&logoColor=white)](./server)
-[![CI](https://img.shields.io/badge/CI-pytest_matrix_%2B_ruff-2088FF?logo=githubactions&logoColor=white)](./.github/workflows/ci.yml)
-[![Reasoning](https://img.shields.io/badge/LLM_core-freellmapi_only-8A2BE2?logo=openai&logoColor=white)](https://github.com/tashfeenahmed/freellmapi)
-[![Status](https://img.shields.io/badge/status-concept_reference-orange.svg)](#-project-status)
-[![Layers](https://img.shields.io/badge/architecture-5_layers_(L1%E2%86%92L5)-teal.svg)](#-the-five-layers-univision-learning-map)
+VIGIL transforms camera streams into structured, risk-scored events through a modular pipeline of computer-vision, validation, reasoning, and reporting components.
 
 </div>
 
@@ -25,7 +17,7 @@ _Turn any camera stream into risk-scored, human-readable, auditable events — t
 ## 📍 Table of Contents
 
 - [What is VIGIL?](#-what-is-vigil)
-- [Reference Lineage](#-reference-lineage-standing-on-four-shoulders)
+- [Reference Lineage](#-Design-Influences-&-Attribution)
 - [The Five Layers](#-the-five-layers-univision-learning-map)
 - [System Architecture](#-system-architecture)
 - [The Pipeline (S0–S5)](#-the-pipeline-s0s5)
@@ -36,6 +28,7 @@ _Turn any camera stream into risk-scored, human-readable, auditable events — t
 - [Safety Model](#-safety-model-non-negotiable)
 - [Evaluation Results](#-evaluation-results)
 - [Project Status](#-project-status)
+- [Developer](#-Developer)
 - [License & Attribution](#-license--attribution)
 
 ---
@@ -77,10 +70,19 @@ mindmap
       RAG / FAISS
       Safety
 ```
+## ✨ Key Features
 
+- 🧩 **Block-based workflow architecture** — compose computer-vision pipelines using reusable blocks.
+- 🎥 **Real-time video processing** — process camera streams through the detection pipeline.
+- 🔍 **Computer vision** — detection, validation, OCR and tracking support.
+- 🤖 **Agentic reasoning** — convert visual detections into structured risk assessments.
+- 🔌 **Swappable AI backend** — reasoning is routed through a unified OpenAI-compatible interface.
+- 🛡️ **Safety-first outputs** — bounded risk scores, evidence-carrying events and human oversight.
+- 📊 **Evaluation tooling** — benchmark detection, latency and risk-scoring behaviour.
+- 🌐 **Full-stack dashboard** — visualize and execute workflows through the web interface.
 ---
 
-## 🧬 Reference Lineage: Standing on Four Shoulders
+## 🧬 Design Influences & Attribution
 
 VIGIL is a **synthesis** — it borrows one hard-won idea from each of four production-grade open-source projects and fuses them into a single coherent stack. The concept cards below link to each upstream repository.
 
@@ -442,6 +444,13 @@ Raw output: [`eval_results.json`](./eval_results.json) (Run 1) and [`eval_result
 | 7 | Config / CI | ✅ |
 | 8 | Tests | ✅ |
 | 9 | Real detector backend (`vision/`) + evaluation harness (`tools/evaluate.py`) | ✅ |
+
+---
+## 👩‍💻 Developer
+
+**Mishkat Fatma**
+
+VIGIL is developed and maintained as a modular computer-vision and agentic-AI project, with emphasis on transparent workflows, inspectable decisions and safety-aware AI systems.
 
 ---
 
