@@ -17,7 +17,8 @@ VIGIL transforms camera streams into structured, risk-scored events through a mo
 ## 📍 Table of Contents
 
 - [What is VIGIL?](#-what-is-vigil)
-- [Reference Lineage](#-Design-Influences-&-Attribution)
+- [Key Features](#-key-features)
+- [Design Influences & Attribution](#-design-influences--attribution)
 - [The Five Layers](#-the-five-layers-univision-learning-map)
 - [System Architecture](#-system-architecture)
 - [The Pipeline (S0–S5)](#-the-pipeline-s0s5)
@@ -28,7 +29,7 @@ VIGIL transforms camera streams into structured, risk-scored events through a mo
 - [Safety Model](#-safety-model-non-negotiable)
 - [Evaluation Results](#-evaluation-results)
 - [Project Status](#-project-status)
-- [Developer](#-Developer)
+- [Developer](#-developer)
 - [License & Attribution](#-license--attribution)
 
 ---
@@ -70,6 +71,8 @@ mindmap
       RAG / FAISS
       Safety
 ```
+---
+
 ## ✨ Key Features
 
 - 🧩 **Block-based workflow architecture** — compose computer-vision pipelines using reusable blocks.
